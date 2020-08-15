@@ -1,0 +1,19 @@
+var reviewSlider = new Swiper(".swiper-container__reviews", {
+  spaceBetween: 30,
+  loop: true,
+  centeredSlides: true,
+  grabCursor: true,
+  autoplay: {
+    delay: 7000,
+    disableOnInteraction: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+  },
+});

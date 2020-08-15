@@ -1,0 +1,96 @@
+.trends
+  display: flex
+  margin-bottom: 145px
+  &__title
+    margin: 0
+  &__texts
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 48px
+  &__navbar
+    width: 366px
+    display: flex
+    justify-content: space-between
+    margin-left: 448px
+    padding: 0
+    &_link
+      list-style: none
+      text-decoration: none
+      font-family: Open Sans
+      font-style: normal
+      font-weight: normal
+      font-size: 18px
+      line-height: 25px
+      color: $light
+      &_1
+        font-weight: bold
+        color: $dark
+.card
+  width: 260px
+  height: 441px
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+.products
+  height: 932px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  &__name
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: $dark
+    text-decoration: none
+  &__price
+    font-family: Open Sans
+    font-style: normal
+    font-weight: normal
+    font-size: 20px
+    line-height: 36px
+    color: $light
+  &__image
+    width: 260px
+    height: 350px
+    object-fit: cover
+    border-radius: 8px
+    &_8
+      padding-top: 120px
+      display: flex
+      flex-direction: column
+      align-items: center
+      z-index: 1
+      position: relative
+      text-decoration: none
+      &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        bottom: 0
+        background-color: $blue
+        z-index: -1
+        border-radius: 8px
+  &__buy
+    display: flex
+    align-items: center
+    justify-content: space-between
+.see-collection
+  width: 112px
+  font-family: HK Grotesk
+  font-style: normal
+  font-weight: bold
+  font-size: 24px
+  line-height: 32px
+  text-align: center
+  letter-spacing: 0.2px
+  color: $white
+  text-decoration: none
+.add
+  padding-bottom: 25px
