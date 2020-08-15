@@ -47,6 +47,11 @@
   .card, .products__image
     width: 230px
 
+  .story
+    &__title
+      font-size: 45px
+      line-height: 54px
+
 @media ( max-width: 992px )
   .container
     max-width: 728px
@@ -124,6 +129,38 @@
       &__reviews      
         max-height: 415px
   
+  .story
+    padding-bottom: 80px
+    &__container
+      max-height: 887px
+      flex-direction: column
+      align-items: center
+    &__texts
+      max-width: 728px
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__swiper
+      &-slide
+        justify-content: space-around
+    &__line
+      max-width: 728px
+      margin-bottom: 79px
+    &__title
+      max-width: 728px
+      font-size: 48px
+      line-height: 60px
+      margin: 24px 0 16px 0
+    &__text
+      margin-bottom: 36px
+    &__buttons
+      margin-bottom: 36px
+    &__cards
+      width: 728px
+    &__image, &__card 
+      width: 322px
+  .slide-1, .slide-2
+    width: 332px
 
 @media ( max-width: 767px )
   .container
@@ -212,6 +249,19 @@
     &-container
       &__reviews      
         max-height: 555px
+  
+  .story
+    &__line
+      max-width: 517px
+    &__swiper
+      &-slide
+        justify-content: space-evenly
+    &__cards
+      width: 576px
+    &__image, &__card 
+      width: 250px
+  .slide-1, .slide-2
+    width: 260px
 
 @media ( max-width: 576px )
   .container
@@ -359,6 +409,45 @@
       max-width: 250px
       &::before
         content: "\2212"
+
+  .story
+    padding-bottom: 64px
+    &__container
+      max-height: 1181px
+    &__line
+      max-width: 320px
+    &__swiper
+      &-slide
+        height: 868px
+        flex-direction: column
+        align-items: center
+    &__title
+      font-size: 28px
+      line-height: 36px
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__buttons
+      margin-bottom: 26px
+    &__cards
+      max-width: 500px
+      width: 92%
+    &__image 
+      width: 270px
+      height: 277px
+    &__card
+      width: 270px
+      height: 150px
+      top: 267px
+    &__name
+      font-size: 20px
+      line-height: 24px
+      padding: 20px 20px 16px 20px
+    &__read
+      padding: 0 0 16px 20px
+  .slide-1, .slide-2
+    width: 280px
+    margin: auto
 
 @media ( max-width: 400px )
   .products

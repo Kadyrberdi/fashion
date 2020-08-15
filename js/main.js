@@ -13,10 +13,7 @@ var reviewSlider = new Swiper(".swiper-container__reviews", {
   },
 });
 var storySlider = new Swiper(".story__swiper-container", {
-  // Optional parameters
   loop: true,
-
-  // Navigation arrows
   navigation: {
     nextEl: ".story__button_next",
     prevEl: ".story__button_prev",
