@@ -163,6 +163,20 @@
   .slide-1, .slide-2
     width: 332px
 
+  .newsletter
+    height: 402px
+    &__texts
+      margin-bottom: 56px
+      text-align: center
+    &__wrapper
+      max-width: 728px
+      flex-direction: column
+      padding: 72px 0 80px 0
+    &__button
+      top: 269px
+      bottom: 84px
+      right: 144px
+
 @media ( max-width: 767px )
   .container
     max-width: 576px
@@ -263,6 +277,12 @@
       width: 250px
   .slide-1, .slide-2
     width: 260px
+
+  .newsletter
+    &__wrapper
+      max-width: 100%
+    &__button
+      right: 68px
 
 @media ( max-width: 576px )
   .container
@@ -450,6 +470,33 @@
     width: 280px
     margin: auto
 
+@media ( max-width: 645px ) 
+  .newsletter
+    height: 414px
+    &__wrapper
+      padding: 64px 0
+    &__title
+      font-size: 28px
+      line-height: 36px
+      margin-bottom: 24px
+    &__text
+      font-size: 16px
+      line-height: 28px
+    &__texts
+      margin-bottom: 36px
+    &__form
+      width: 100%
+      max-height: 48px
+      margin-bottom: 23px
+    &__input
+      max-height: 48px
+      padding-right: 10px
+    &__button
+      position: static
+      max-height: 48px
+      width: 100%
+      border-radius: 8px
+
 @media ( max-width: 400px )
   .products
     height: 900px
@@ -478,4 +525,3 @@
     max-width: 320px
   .products
     justify-content: space-between
-  
