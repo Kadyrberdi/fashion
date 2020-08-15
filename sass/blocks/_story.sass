@@ -1,6 +1,96 @@
 .story
+  padding-bottom: 140px
+  &__line
+    max-width: 1150px
+    margin: auto
+    border: 1px solid #E5EAF4
+    margin-bottom: 120px
+  &__container
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  &__container   
+    max-width: 1150px
+    max-height: 606px
+    margin: auto
+  &__tag
+    position: relative
+    z-index: 1
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 20px
+    text-align: start
+    color: $green
+    padding: 6px 16px
+    margin: 0
+    &::before
+      content: ''
+      position: absolute 
+      width: 88px 
+      height: 100%
+      z-index: -1
+      left: 0px
+      right: 0px
+      top: 0px
+      bottom: 0px
+      background: #36B37E
+      opacity: 0.1
+      border-radius: 2000px
+  &__title
+    max-width: 288px
+    margin: 28px 0 24px 0
+  &__text
+    margin: 0 0 42px 0
+  &__swiper
+    &-wrapper
+      display: flex
+      flex-direction: row
+      justify-content: space-between
+    &-slide
+      position: relative
+      width: 322px
+      height: 455px
+  &__texts
+    max-width: 392px
+  &__image
+    width: 312px
+    height: 317px
+    border-radius: 8px 8px 0px 0px
+  &__card
+    position: absolute
+    width: 312px
+    height: 178px
+    display: flex
+    flex-direction: column
+    top: 270px
+    left: 10px
+    background-color: #FAFDFF
+  &__name
+    font-family: HK Grotesk
+    font-style: normal
+    font-weight: 600
+    font-size: 22px
+    line-height: 32px
+    letter-spacing: 0.2px
+    color: #183B56
+    margin: 0
+    padding: 20px 39px 12px 20px
+  &__read
+    font-family: Open Sans
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: $blue
+    text-decoration: none
+    padding: 0 40px 20px 22px
   &__button
     cursor: pointer
     border: none
     outline: none
     background-color: #fff
+    padding: 0
+    &_prev
+      margin-right: 22px
