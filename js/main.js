@@ -11,7 +11,16 @@ var reviewSlider = new Swiper(".swiper-container__reviews", {
     el: ".swiper-pagination",
     clickable: true,
   },
+});
+var storySlider = new Swiper(".story__swiper-container", {
+  // Optional parameters
+  loop: true,
 
+  // Navigation arrows
+  navigation: {
+    nextEl: ".story__button_next",
+    prevEl: ".story__button_prev",
+  },
   keyboard: {
     enabled: true,
     onlyInViewport: true,
