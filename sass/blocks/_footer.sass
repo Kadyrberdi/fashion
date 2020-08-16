@@ -28,8 +28,9 @@
     flex-direction: row
     justify-content: space-between
   &__list
-    min-width: 165px
+    width: 165px
   &__ul
+    margin: 0
     padding-left: 0
   &__title
     font-family: Open Sans
@@ -47,7 +48,8 @@
     padding-bottom: 80px
   &__item    
     list-style: none
-    margin-bottom: 24px
+    &:not(:last-child)
+      margin-bottom: 24px
   &__link
     font-family: Open Sans
     font-style: normal
@@ -58,5 +60,6 @@
     text-decoration: none
 .social-network
   margin-right: 6px
+  text-decoration: none
 .heart
   margin-bottom: 24px
