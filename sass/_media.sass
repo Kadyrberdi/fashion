@@ -85,7 +85,7 @@
     &__photos
       margin-right: 0
       margin-bottom: 50px
-      justify-content: space-evenly
+      justify-content: space-between
     &__big-photo
       width: 322px
       height: 490px
@@ -114,6 +114,9 @@
       margin: 0 
   .card, .products__image
     width: 280px
+  .card
+    margin-bottom: 48px
+    &8
   .products
     height: 1908px
     justify-content: space-around
@@ -246,8 +249,6 @@
         line-height: 1
 
   .new-collection
-    &__section
-      align-items: center
     &__photos
       margin-bottom: 40px
     &__big-photo
@@ -318,11 +319,13 @@
     &__list
       width: 250px
 
-
 @media ( max-width: 576px )
   .container
     max-width: 500px
     width: 92%
+  .new-collection
+    &__section
+      align-items: center
   .navbar
     &-menu  
       &__fixed
