@@ -447,20 +447,22 @@
           </div>
           <!-- /.newsletter__texts -->
           <form action="send.php" method="POST" class="form newsletter__form">
-            <img
-              class="newsletter__icon"
-              src="img/icon-message.svg"
-              alt="icon: icon-message"
-            />
-            <input
-              type="email"
-              class="input newsletter__input"
-              placeholder="Your email"
-              name="email"
-              required
-            />
+            <div class="newsletter__subscribe">
+              <img
+                class="newsletter__icon"
+                src="img/icon-message.svg"
+                alt="icon: icon-message"
+              />
+              <input
+                type="email"
+                class="input newsletter__input"
+                placeholder="Your email"
+                name="email"
+                required
+              />
+            </div>
+            <button class="button newsletter__button">Subscribe</button>
           </form>
-          <button class="button newsletter__button">Subscribe</button>
         </div>
         <!-- /.newsletter-wrapper -->
       </div>
@@ -468,6 +470,8 @@
     </section>
     <!-- /.newsletter -->
     <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
