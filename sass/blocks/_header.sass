@@ -1,3 +1,31 @@
+.header
+  &__fixed
+    padding-top: 26px
+    padding-bottom: 62px
+  &__top
+    display: flex
+    align-items: center
+    justify-content: space-evenly
+  &__button
+    min-width: 131px
+    font-family: Open Sans
+    font-style: normal
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    color: $blue
+    border: 2px solid $blue
+    border-radius: 8px
+    padding: 13px 22px
+    outline: none
+    cursor: pointer
+    background-color: $white
+  &__mobile
+    &-button
+      display: none
+      outline: none
+      cursor: pointer
+      background-color: $white
 .navbar
   &-menu
     width: 397px
@@ -6,14 +34,7 @@
     justify-content: space-between    
     margin-right: 40px
     margin-left: 482px
-    padding: 0
-    &__fixed
-      padding-top: 26px
-      padding-bottom: 62px
-    &__top
-      display: flex
-      align-items: center
-      justify-content: space-evenly
+    padding: 0    
     &__item
       list-style: none
     &__link
@@ -24,23 +45,4 @@
       font-size: 16px
       line-height: 22px
       color: $dark
-    &__button
-      min-width: 131px
-      font-family: Open Sans
-      font-style: normal
-      font-weight: bold
-      font-size: 16px
-      line-height: 22px
-      color: $blue
-      border: 2px solid $blue
-      border-radius: 8px
-      padding: 13px 22px
-      outline: none
-      cursor: pointer
-      background-color: $white
-    &__mobile
-      &-button
-        display: none
-        outline: none
-        cursor: pointer
-        background-color: $white
+    
