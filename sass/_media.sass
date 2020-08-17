@@ -1,6 +1,7 @@
 @media (max-width: 1400px)
   .container
     max-width: 1192px
+    margin: auto
   .advertisement
     max-width: 1192px
     &::before
@@ -41,9 +42,7 @@
     &__text
       margin-bottom: 30px
 
-  .trends
-    &__navbar
-      margin-left: auto
+
   .card, .products__image
     width: 230px
 
@@ -170,6 +169,7 @@
     height: 402px
     &__texts
       margin-bottom: 56px
+      margin-right: 0
       text-align: center
     &__wrapper
       max-width: 728px
@@ -194,10 +194,7 @@
     &__bottom
       padding-bottom: 64px
 
-@media ( max-width: 767px )
-  .container
-    max-width: 576px
-    width: 92%
+@media ( max-width: 768px )
   .header
     &__fixed
       width: 100%
@@ -207,16 +204,20 @@
       right: 0
       z-index: 99
       background-color: #fff
+      padding-top: 26px
       padding-bottom: 48px
+      
     &__top
+      max-width: 656px
       justify-content: space-between
+      align-items: flex-end
     &__button
       display: none
       outline: none
     &__mobile-button
       display: flex
-      width: 16px
-      height: 11px
+      width: 22px
+      height: 17px
       padding: 0
       align-items: center
       justify-content: space-between
@@ -224,9 +225,13 @@
       border: none
       cursor: pointer
     &__line
-      width: 16px
-      height: 1px
+      width: 22px
+      height: 2.2px
       background-color: #3A4C66
+      text-decoration: none
+      border: none
+      outline: none      
+      right: 1px
   .navbar
     &-menu
       display: none 
@@ -235,6 +240,50 @@
       
   body
     padding-top: 102px
+
+  .advertisement
+    height: 624px
+    margin-bottom: 80px
+    &__text
+      margin-bottom: 51px
+    &__icons
+      margin-top: 55px
+  
+  .new-collection
+    &__section
+      max-width: 672px
+      margin: auto
+    &__photos
+      justify-content: space-evenly
+      margin-bottom: 40px
+  .check
+    margin-right: 30px
+
+  .trends
+    max-width: 608px
+    margin: auto
+    margin-bottom: 81px
+  .products
+    justify-content: space-between
+
+  .reviews
+    max-width: 630px
+    margin: auto
+    &__author
+      margin-bottom: 41px
+  
+  .story
+    max-width: 728px
+    margin: auto
+    padding-bottom: 67px
+
+  .footer
+    max-width: 641px
+
+@media ( max-width: 767px )
+  .container
+    max-width: 576px
+    width: 92%
 
   .advertisement
     max-width: 576px
@@ -246,7 +295,7 @@
       font-size: 16px
       line-height: 30px
     &__main-texts
-      padding: 0 210px 0 20px
+      padding: 0 208px 0 20px
       margin: 42px 0 36px 0
     &__icon
       &_payment
@@ -337,6 +386,7 @@
   .advertisement
     max-width: 500px
     width: 92%
+    height: 899px
     margin-bottom: 64px
     &::before
       max-width: 500px
@@ -423,12 +473,18 @@
     &__navbar_link
       font-size: 16px
       line-height: 22px
+      &:hover        
+        font-weight: normal
+        color: $light
+  .shopping-cart
+    width: 14px
   .products
     justify-content: space-evenly
     height: 1100px
     &__name
       font-size: 16px
       line-height: 20px
+      padding-left: 0
     &__price
       font-size: 14px
       line-height: 24px
@@ -439,6 +495,7 @@
         margin-bottom: 0
     &__buy
       justify-content: start
+      padding-left: 0
     &__price
       margin-right: 9px
     &__order
@@ -561,6 +618,10 @@
   .newsletter
     &__button
       top: 302px
+  .advertisement
+    &__icons
+      &_guarantee
+        margin-right: 0
 
 @media ( max-width: 400px )
   .products
@@ -583,8 +644,12 @@
     &__head
       font-size: 28px
       line-height: 36px
+    &__icon
+      margin-right: 3px
     &__icons
-      justify-content: center  
+      &_payment
+        margin-right: 10px
+
 
 @media ( max-width: 330px )
   .container
@@ -594,3 +659,56 @@
     width: 100%
   .products
     justify-content: space-between
+
+  .header
+    &__fixed
+      padding-top: 18px
+      padding-bottom: 42px
+    &__top
+      max-width: 272px
+      align-items: center
+  body
+    padding-top: 88px
+  .advertisement
+    &__icon
+      width: 24px
+      height: 24px
+    &__icons
+      justify-content: center
+      &_payment, &_guarantee
+        margin-bottom: 16px
+  .new-collection
+    &__text
+      margin-bottom: 18px
+  .products
+    height: 1010px
+  .trends
+    margin-bottom: 43px
+    &__texts
+      margin-bottom: 36px
+  .swiper-slide
+    &__reviews
+      &::before
+        left: 38%
+  .reviews
+    padding-bottom: 52px
+    &__text
+      margin-top: 84px
+  .story
+    padding-bottom: 35px
+    &__line
+      margin-bottom: 40px
+    &__button-img
+      width: 48px
+      height: 48px
+    &__buttons
+      margin-bottom: 20px
+  .footer
+    &__wrapper
+      padding-top: 48px
+    &__title
+      margin-bottom: 20px
+    &__item:not(:last-child)
+      margin-bottom: 15px
+    &__list:nth-child(1), &__list:nth-child(2)
+      margin-bottom: 39px

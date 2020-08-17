@@ -1,4 +1,6 @@
 .trends
+  max-width: 1135px
+  margin: auto
   display: flex
   margin-bottom: 145px
   &__title
@@ -13,7 +15,6 @@
     width: 366px
     display: flex
     justify-content: space-between
-    margin-left: 448px
     padding: 0
     &_link
       list-style: none
@@ -24,7 +25,7 @@
       font-size: 18px
       line-height: 25px
       color: $light
-      &_1
+      &:hover        
         font-weight: bold
         color: $dark
 .card
@@ -49,6 +50,7 @@
     color: $dark
     text-decoration: none
     margin-bottom: 3px
+    padding-left: 10px
   &__price
     font-family: Open Sans
     font-style: normal
@@ -84,6 +86,8 @@
     display: flex
     align-items: center
     justify-content: space-between
+    padding-left: 10px
+    padding-right: 10px
 .see-collection
   width: 112px
   font-family: HK Grotesk
