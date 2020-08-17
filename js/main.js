@@ -43,4 +43,17 @@ $(document).ready(function () {
       modalDialog.removeClass("modal__dialog--visible");
     }
   });
+
+  $(document).ready(function () {
+    var tabsItem = $(".trends__navbar_link");
+    var contentItem = $(".content__item");
+
+    tabsItem.on("click", function (event) {
+      var activeContent = $(this).attr("data-target");
+      tabsItem.removeClass("trends__navbar_link--active");
+      contentItem.removeClass("content__item--active");
+      $(activeContent).addClass("content__item--active");
+      $(this).addClass("trends__navbar_link--active");
+    });
+  });
 });

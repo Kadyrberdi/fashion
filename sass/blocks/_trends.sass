@@ -2,7 +2,7 @@
   max-width: 1135px
   margin: auto
   display: flex
-  margin-bottom: 145px
+  margin-bottom: 155px
   &__title
     margin: 0
   &__texts
@@ -25,7 +25,8 @@
       font-size: 18px
       line-height: 25px
       color: $light
-      &:hover        
+      cursor: pointer
+      &--active      
         font-weight: bold
         color: $dark
 .card
@@ -101,3 +102,7 @@
   text-decoration: none
 .add
   padding-bottom: 25px
+.content__item
+  display: none
+.content__item--active
+  display: block
